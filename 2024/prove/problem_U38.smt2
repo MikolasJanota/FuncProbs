@@ -1,7 +1,7 @@
 (set-info :smt-lib-version 2.6)
 (set-logic UFNIRA)
 (set-info :source |
-Encoded by: Miroslav Olšák
+Encoded by: Mirek Olšák
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 38
