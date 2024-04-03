@@ -25,6 +25,8 @@ Original source: APMO-1989
 
 ; Solutions
 
-(assert (not (exists ((c Real)) (forall ((x Real)) (= (f x) (+ x c))))))
+(assert (not (exists ((c Real)) (and
+  (forall ((x Real)) (= (f x) (+ x c)))
+  (forall ((x Real)) (= (g x) (- x c)))))))
 
 (check-sat)

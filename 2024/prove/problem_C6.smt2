@@ -15,7 +15,7 @@ Original source: PraSe-25-4-3
 (declare-fun f (Real) Real)
 
 ; Equations
-(assert (forall ((x Real) (y Real)) (= (+ (f (+ x y)) (* 2.0 (f (- x y)))) (- (* 3.0 (f y)) y))))
+(assert (forall ((x Real) (y Real)) (= (+ (f (+ x y)) (* 2.0 (f (- x y)))) (- (* 3.0 (f x)) y))))
 
 ; Find all possible f
 
