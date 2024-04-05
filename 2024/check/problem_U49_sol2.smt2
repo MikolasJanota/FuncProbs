@@ -19,7 +19,7 @@ Original source: MEMO-2009
 
 ; Negated constraints
 (assert (not (and
-  (forall ((x Real) (y Real)) (= (+ (f (* x (f x))) (f (+ (f x) (f y)))) (+ (* y (f x)) (f (+ x (f y))))))
+  (forall ((x Real) (y Real)) (= (+ (f (* x (f y))) (f (+ (f x) (f y)))) (+ (* y (f x)) (f (+ x (f y))))))
 )))
 
 (check-sat)

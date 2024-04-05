@@ -20,6 +20,6 @@ Problem number: Cvičení 7
 
 ; Solutions
 
-(assert (not (forall ((x Real)) (=> (and (distinct x 1.0) (distinct x (- 1.0))) (= (f x) (+ (* x x x) (/ (* 7.0 x) (* 2.0 (- 1.0 (* x x))))))))))
+(assert (not (forall ((x Real)) (=> (and (distinct x 1.0) (distinct x (- 1.0))) (= (f x) (/ (+ (* x x x) (* 7.0 x)) (* 2.0 (- 1.0 (* x x)))))))))
 
 (check-sat)

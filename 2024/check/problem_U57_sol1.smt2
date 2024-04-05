@@ -17,10 +17,10 @@ Original source: BalticWay-2011-6
 
 ; Equations
 (assert (= c 1.0))
+(assert (forall ((x Real)) (= (f (f x)) (+ (- (* x x) x) 1.0))))
 
 ; Negated constraints
 (assert (not (and
-  (forall ((x Real)) (= (f (f x)) (+ (- (* x x) x) 1.0)))
   (= (f 0.0) c)
 )))
 

@@ -21,6 +21,6 @@ Problem number: Úloha 2
 
 ; Solutions
 
-(assert (not (exists ((c Real)) (forall ((x Real)) (= (f x) (* c x))))))
+(assert (not (exists ((c Real)) (and (> c 0.0) (forall ((x Real)) (= (f x) (* c x)))))))
 
 (check-sat)

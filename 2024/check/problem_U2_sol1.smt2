@@ -12,6 +12,7 @@ Problem number: Úloha 2
 
 ; Header
 (declare-const c Real)
+(assert (> c 0.0))
 (declare-fun f (Real) Real)
 
 ; Equations

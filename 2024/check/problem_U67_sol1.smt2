@@ -22,7 +22,7 @@ Original source: Spain-2006
 ; Negated constraints
 (assert (not (and
   (= (f lambda) 1.0)
-  (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (= (+ (+ (* (f x) (f y)) (f (/ lambda x))) (f (/ lambda y))) (* 2.0 (f (* x y))))))
+  (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (= (+ (* (f x) (f y)) (* (f (/ lambda x)) (f (/ lambda y)))) (* 2.0 (f (* x y))))))
 )))
 
 (check-sat)

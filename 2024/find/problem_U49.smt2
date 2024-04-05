@@ -15,7 +15,7 @@ Original source: MEMO-2009
 (declare-fun f (Real) Real)
 
 ; Equations
-(assert (forall ((x Real) (y Real)) (= (+ (f (* x (f x))) (f (+ (f x) (f y)))) (+ (* y (f x)) (f (+ x (f y)))))))
+(assert (forall ((x Real) (y Real)) (= (+ (f (* x (f y))) (f (+ (f x) (f y)))) (+ (* y (f x)) (f (+ x (f y)))))))
 
 ; Find all possible f
 

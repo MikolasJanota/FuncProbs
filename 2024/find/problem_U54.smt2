@@ -13,6 +13,7 @@ Original source: APMO-2011
 
 ; Header
 (declare-const m Real)
+(assert (> m 0.0))
 (declare-fun f (Real) Real)
 
 ; Equations

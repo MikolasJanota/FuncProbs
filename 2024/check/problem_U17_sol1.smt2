@@ -16,10 +16,10 @@ Problem number: Úloha 17
 
 ; Equations
 (assert (= r 0.0))
+(assert (forall ((x Real)) (= (f (f x)) (+ x (f x)))))
 
 ; Negated constraints
 (assert (not (and
-  (forall ((x Real)) (= (f (f x)) (+ x (f x))))
   (= (f (f r)) 0.0)
 )))
 
