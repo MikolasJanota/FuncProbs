@@ -16,7 +16,7 @@ Original source: IMO-2008-4
 (assert (forall ((x Real)) (=> (> x 0.0) (> (f x) 0.0))))
 
 ; Equations
-(assert (forall ((x Real) (y Real) (z Real) (w Real)) (=> (and (> x 0.0) (> y 0.0) (> z 0.0) (> w 0.0)) (= (/ (+ (* (f w) (f w)) (* (f x) (f x))) (+ (f (* y y)) (f (* z z)))) (/ (+ (* w w) (* x x)) (+ (* y y) (* z z)))))))
+(assert (forall ((x Real) (y Real) (z Real) (w Real)) (=> (and (> x 0.0) (> y 0.0) (> z 0.0) (> w 0.0)) (=> (= (* x w) (* y z)) (= (/ (+ (* (f w) (f w)) (* (f x) (f x))) (+ (f (* y y)) (f (* z z)))) (/ (+ (* w w) (* x x)) (+ (* y y) (* z z))))))))
 
 ; Find all possible f
 
