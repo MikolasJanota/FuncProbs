@@ -1,5 +1,5 @@
 (set-info :smt-lib-version 2.6)
-(set-logic UFNIRA)
+(set-logic AUFNIRA)
 (set-info :source |
 Encoded by: Mirek Olšák
 From a collection by: Vít Musil
