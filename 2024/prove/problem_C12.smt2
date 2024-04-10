@@ -5,7 +5,7 @@ Encoded by: Mirek Olšák
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Cvičení 12, Úloha 35
-Original source: IMO-1986-5
+Original source: IMO-1992-2
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
 (set-info :category "academic")
