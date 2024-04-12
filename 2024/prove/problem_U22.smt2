@@ -29,12 +29,12 @@ Problem number: Úloha 22
 (assert (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (=> (< x y) (< (f x) (f y)))))) ; increasing
 
 ; Equations
-(assert (forall ((x Real) (y Real)) (= (f (* x y)) (+ (f x) (f y)))))
+(assert (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (= (f (* x y)) (+ (f x) (f y))))))
 
 ; Find all possible f
 
 ; Solutions
 
-(assert (not (exists ((b Real)) (and (> b 0.0) (forall ((x Real)) (= (f x) (* b (log x))))))))
+(assert (not (exists ((b Real)) (and (> b 0.0) (forall ((x Real)) (=> (> x 0.0) (= (f x) (* b (log x)))))))))
 
 (check-sat)

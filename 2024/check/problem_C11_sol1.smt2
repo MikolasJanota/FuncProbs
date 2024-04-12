@@ -30,13 +30,13 @@ Problem number: Cvičení 11
 (declare-fun f (Real) Real)
 
 ; Equations
-(assert (forall ((x Real)) (= (f x) (power x c))))
+(assert (forall ((x Real)) (=> (> x 0.0) (= (f x) (power x c)))))
 
 ; Negated constraints
 (assert (not (and
   (forall ((x Real)) (=> (> x 0.0) (> (f x) 0.0)))
   (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (=> (< x y) (< (f x) (f y)))))
-  (forall ((x Real) (y Real)) (= (f (* x y)) (* (f x) (f y))))
+  (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (= (f (* x y)) (* (f x) (f y)))))
 )))
 
 (check-sat)

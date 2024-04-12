@@ -30,12 +30,12 @@ Problem number: Cvičení 11
 (assert (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (=> (< x y) (< (f x) (f y)))))) ; increasing
 
 ; Equations
-(assert (forall ((x Real) (y Real)) (= (f (* x y)) (* (f x) (f y)))))
+(assert (forall ((x Real) (y Real)) (=> (and (> x 0.0) (> y 0.0)) (= (f (* x y)) (* (f x) (f y))))))
 
 ; Find all possible f
 
 ; Solutions
 
-(assert (not (exists ((c Real)) (and (> c 0.0) (forall ((x Real)) (= (f x) (power x c)))))))
+(assert (not (exists ((c Real)) (and (> c 0.0) (forall ((x Real)) (=> (> x 0.0) (= (f x) (power x c))))))))
 
 (check-sat)
