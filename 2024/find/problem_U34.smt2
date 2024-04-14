@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 34
 Original source: IMO-1990-4
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status sat)
 
 ; Header
@@ -21,4 +21,5 @@ Original source: IMO-1990-4
 ; Find an example of f
 
 (check-sat)
+(exit)
 (get-model)

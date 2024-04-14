@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 61
 Original source: CSMO-60-A-III-6
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Header
@@ -24,3 +24,4 @@ Original source: CSMO-60-A-III-6
 )))
 
 (check-sat)
+(exit)

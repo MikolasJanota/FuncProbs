@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 82
 Original source: PraSe-27-7-5
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Special functions
@@ -35,8 +35,9 @@ Original source: PraSe-27-7-5
 (assert (forall ((x Real)) (= (f x) (sin x))))
 
 ; Negated constraints
-(assert (not (and
+(assert (not
   (forall ((x Real)) (= (+ (f x) (* x (f (- x)))) (* (- 1.0 x) (sin x))))
-)))
+))
 
 (check-sat)
+(exit)

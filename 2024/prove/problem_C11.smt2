@@ -1,13 +1,13 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Cvičení 11
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Special functions
@@ -39,3 +39,4 @@ Problem number: Cvičení 11
 (assert (not (exists ((c Real)) (and (> c 0.0) (forall ((x Real)) (=> (> x 0.0) (= (f x) (power x c))))))))
 
 (check-sat)
+(exit)

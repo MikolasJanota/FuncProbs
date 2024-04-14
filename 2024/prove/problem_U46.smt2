@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 46
 Original source: IMO-2010-1
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Header
@@ -26,3 +26,4 @@ Original source: IMO-2010-1
 (assert (not (exists ((c Real)) (and (and (>= c 1.0) (< c 2.0)) (forall ((x Real)) (= (f x) c))))))
 
 (check-sat)
+(exit)

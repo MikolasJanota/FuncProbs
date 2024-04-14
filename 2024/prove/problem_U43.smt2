@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 43
 Original source: IMOSC-2003-A5
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Special functions
@@ -43,3 +43,4 @@ Original source: IMOSC-2003-A5
 (assert (not (exists ((c Real)) (and (> c 0.0) (forall ((x Real)) (=> (> x 0.0) (= (f x) (+ (power x c) (power x (- c))))))))))
 
 (check-sat)
+(exit)

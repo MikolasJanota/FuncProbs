@@ -1,14 +1,14 @@
 (set-info :smt-lib-version 2.6)
 (set-logic AUFNIRA)
 (set-info :source |
-Encoded by: Mirek Olšák
+Encoded by: Mirek Olšák, Mikoláš Janota, Chad E. Brown
 From a collection by: Vít Musil
 Source url: https://prase.cz/library/FunkcionalniRovniceVM/FunkcionalniRovniceVM.pdf
 Problem number: Úloha 25, Úloha 60
 Original source: BMO-1997-4, BMO-2000-1
 |)
 (set-info :license "https://creativecommons.org/licenses/by-nc/4.0/")
-(set-info :category "academic")
+(set-info :category "crafted")
 (set-info :status unsat)
 
 ; Header
@@ -18,8 +18,9 @@ Original source: BMO-1997-4, BMO-2000-1
 (assert (forall ((x Real)) (= (f x) x)))
 
 ; Negated constraints
-(assert (not (and
+(assert (not
   (forall ((x Real) (y Real)) (= (f (+ (* x (f x)) (f y))) (+ y (* (f x) (f x)))))
-)))
+))
 
 (check-sat)
+(exit)
