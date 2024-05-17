@@ -17,6 +17,7 @@ Problem number: Úloha 90
 (assert (forall ((x Real)) (=> (> x 0.0) (> (f x) 0.0))))
 
 ; Equations
+(assert (forall ((x Real)) (=> (> x 0.0) (> (f x) x))))
 (assert (forall ((x Real)) (=> (> x 0.0) (= (f (- (f x) x)) (* 6.0 x)))))
 
 ; Find all possible f

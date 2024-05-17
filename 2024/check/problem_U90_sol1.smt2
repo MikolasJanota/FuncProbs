@@ -21,6 +21,7 @@ Problem number: Úloha 90
 ; Negated constraints
 (assert (not (and
   (forall ((x Real)) (=> (> x 0.0) (> (f x) 0.0)))
+  (forall ((x Real)) (=> (> x 0.0) (> (f x) x)))
   (forall ((x Real)) (=> (> x 0.0) (= (f (- (f x) x)) (* 6.0 x))))
 )))
 
